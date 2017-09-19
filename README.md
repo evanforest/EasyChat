@@ -19,9 +19,9 @@ qq：535903063</br>
           如果当客户端因网络问题而连接不上的话，就可以检测已到离开聊天室。</br>
           服务器掉线的话就会结束聊天室。</br>
   处理了大部分异常，暂未发现大bug。</br>
-&nbsp;</br>
+</br>
 运用到的知识点：</br>
-  封装、低耦合高内聚思想</br>
+  <pre>封装、低耦合高内聚思想</br>
   安卓基础知识(Activity,Service,各种界面布局和View，自定义View)</br>
   Socket(Socket、ServerSocket、MulticastSocket、DatagramSocket等)</br>
   多线程</br>
