@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.linzg.www.androidinternet.activity.ChatActivity">
+    <LinearLayout
+        android:id="@+id/shang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+        <ScrollView
+            android:id="@+id/scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="true"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="30dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:background="#222222"
+            android:fillViewport="true">
+            <TextView
+                android:id="@+id/chatContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:background="#222222"
+                android:textColor="#ffffff" />
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:paddingBottom="20dp"-->
+
+                <!--android:scrollbars="vertical"-->
+                <!--android:fadeScrollbars="false"-->
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/editBack"
+        android:gravity="bottom">
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <Button
+            android:id="@+id/chat_send_but"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="发送" />
+    </LinearLayout>
+
+
+</LinearLayout>
